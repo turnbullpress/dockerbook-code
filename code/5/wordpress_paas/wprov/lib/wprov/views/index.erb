@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>Welcome to WProv</h1>
+
+  <br />
+
+  <p><b>WProv</b> or the Wordpress Provisioner is a <a href="http://www.sinatrarb.com">Sinatra</a> app that demonstrates how to build a simple PAAS with Docker. It allows you to provision multiple custom Wordpress instances running in Docker containers.</p>
+
+  <p>It was written for <a href="http://www.dockerbook.com">The Docker Book</a>.</p>
+</div>
+
+<h3>Add a new Wordpress instance</h3>
+
+<br />
+
+  <form class="well" action="/wordpress/create" method="post">
+    <label><h2>Wordpress Instance</h2><label>
+
+    <br />
+
+    <label><b>Enter name of the Wordpress blog.</b></label>
+    <input type="text" name="name" />
+
+    <br />
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+<br />
+

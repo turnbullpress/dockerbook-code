@@ -1,0 +1,5 @@
+pkg/*
+*.gem
+.bundle
+db/statum.db
+config/config.yml
