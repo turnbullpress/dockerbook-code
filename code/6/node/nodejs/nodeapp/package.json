@@ -1,0 +1,11 @@
+{
+    "name": "docker-dev",
+    "version": "0.1.0",
+    "description": "Docker Dev",
+    "dependencies": {
+        "connect-redis": "~1.4.5",
+        "express": "~3.3.3",
+        "hiredis": "~0.1.15",
+        "redis": "~0.8.4"
+    }
+}

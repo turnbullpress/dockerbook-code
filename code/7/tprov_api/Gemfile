@@ -1,0 +1,8 @@
+source "http://rubygems.org"
+gem "sinatra"
+gem "sinatra-static-assets"
+gem "emk-sinatra-url-for"
+gem "sinatra-flash"
+gem "sinatra-redirect-with-flash"
+gem "docker-api", :require => "docker"
+gem "redis"

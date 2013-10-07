@@ -1,0 +1,30 @@
+<div class="page-header">
+  <h1>Tomcat Applications</h1>
+</div>
+
+<% if @instances.empty? %>
+<h2>No running Tomcat applications!</h2>
+<% else %>
+<form class="well" action="/tomcat/delete" method="post">
+  <table class="table table-striped table-bordered table-condensed">
+    <% @instances.each do |id,host| %>
+        <tr>
+          <th>Container ID</th>
+          <th>IPAddress</th>
+          <th>Port</th>
+          <th>Delete?</th>
+        </tr>
+        <tr>
+          <td><%= host['hostname'] %></td>
+          <td><%= host['ip'] %></td>
+          <td><%= host['port'] %></td>
+          <td><input type="checkbox" name="id" value="<%= id %>" style="text-align:center; vertical-align: middle;"> </td>
+        </tr>
+    <% end %>
+  </table>
+  <br />
+  <button type="submit" class="btn">Submit</button>
+</form>
+
+<% end %>
+
