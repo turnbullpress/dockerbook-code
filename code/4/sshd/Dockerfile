@@ -1,5 +1,5 @@
 # VERSION  0.0.1
-FROM debian:jessie
+FROM ubuntu:12.04
 MAINTAINER James Turnbull "james@example.com"
 RUN apt-get update
 RUN apt-get install -y openssh-server
