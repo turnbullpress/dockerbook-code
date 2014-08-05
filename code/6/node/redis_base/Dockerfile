@@ -11,3 +11,5 @@ RUN apt-get -yqq install redis-server redis-tools
 VOLUME [ "/var/lib/redis", "/var/log/redis/" ]
 
 EXPOSE 6379
+
+CMD []
