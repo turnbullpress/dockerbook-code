@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h1>Welcome to TProv</h1>
+
+  <br />
+
+  <p><b>TProv</b> or the Tomcat Provisioner is a <a href="http://www.sinatrarb.com">Sinatra</a> app that demonstrates how to build a simple PAAS with Docker. It allows you to provision Tomcat applications in Docker containers.</p>
+
+  <p>It was written for <a href="http://www.dockerbook.com">The Docker Book</a>.</p>
+</div>
+
+<h3>Add a new Tomcat Application</h3>
+
+<br />
+
+  <form class="well" action="/tomcat/create" method="post">
+    <label><h2>Tomcat Application</h2><label>
+
+    <br />
+
+    <label><b>Enter name of the Tomcat application.</b></label>
+    <input type="text" name="name" />
+
+    <label><b>Enter the URL of a WAR file you wish to run.</b></label>
+    <input type="text" name="url" />
+
+    <br />
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+<br />
+
