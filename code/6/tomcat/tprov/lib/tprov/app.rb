@@ -59,27 +59,27 @@ module TProv
 
     helpers do
       def get_war(name, url)
-        cid = `docker run --name #{name} jamtur01/fetcher #{url} 2>&1`.chop
+        cid = %x(docker run --name #{name} jamtur01/fetcher #{url} 2>&1).chop
         puts cid
         [$?.exitstatus == 0, cid]
       end
 
       def create_instance(name)
-        cid = `docker run -P --volumes-from #{name} -d -t jamtur01/tomcat7 2>&1`.chop
+        cid = %(docker run -P --volumes-from #{name} -d -t jamtur01/tomcat7 2>&1).chop
         [$?.exitstatus == 0, cid]
       end
 
       def delete_instance(cid)
-        kill = `docker kill #{cid} 2>&1`
+        kill = %(docker kill #{cid} 2>&1)
         [$?.exitstatus == 0, kill]
       end
 
       def list_instances
         @list = {}
-        instance_ids = `docker ps -q`.split(/\n/).reject(&:empty?)
+        instance_ids = %(docker ps -q).split(/\n/).reject(&:empty?)
         instance_ids.each { |id|
-          port = `docker port #{id} 8080`.chop
-          config = JSON.parse(`docker inspect #{id}`)
+          port = %(docker port #{id} 8080).chop
+          config = JSON.parse(%(docker inspect #{id}))
           @list[id] = { 'hostname' => config[0]["Config"]["Hostname"], 'ip' => config[0]["NetworkSettings"]["IPAddress"], 'port' => port }
         }
         @list
