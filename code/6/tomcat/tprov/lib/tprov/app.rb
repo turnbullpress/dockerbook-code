@@ -59,7 +59,7 @@ module TProv
 
     helpers do
       def get_war(name, url)
-        cid = `docker run --name #{name} jamtur01/fetcher #{url} 2>&1`.chop
+        cid = `docker run --name "#{name}" jamtur01/fetcher "#{url}" 2>&1`.chop
         puts cid
         [$?.exitstatus == 0, cid]
       end
