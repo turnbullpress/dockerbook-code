@@ -1,0 +1,10 @@
+{
+  "data_dir": "/data",
+  "ui_dir": "/webui",
+  "client_addr": "0.0.0.0",
+  "ports": {
+    "dns": 53
+  },
+  "recursor": "8.8.8.8"
+}
+
