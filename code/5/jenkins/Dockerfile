@@ -3,8 +3,8 @@ MAINTAINER james@example.com
 ENV REFRESHED_AT 2014-06-01
 
 RUN apt-get update -qq && apt-get install -qqy curl
-RUN curl https://get.docker.io/gpg | apt-key add -
-RUN echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list
+RUN curl https://get.docker.com/gpg | apt-key add -
+RUN echo deb http://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list
 RUN apt-get update -qq && apt-get install -qqy iptables ca-certificates lxc openjdk-6-jdk git-core lxc-docker
 
 ENV JENKINS_HOME /opt/jenkins/data
