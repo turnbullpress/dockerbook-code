@@ -1,0 +1,11 @@
+web:
+  image: jamtur01/figapp
+  command: python app.py
+  ports:
+   - "5000:5000"
+  volumes:
+   - .:/figapp
+  links:
+   - redis
+redis:
+  image: redis
