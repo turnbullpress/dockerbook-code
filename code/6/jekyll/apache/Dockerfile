@@ -4,7 +4,7 @@ MAINTAINER James Turnbull <james@example.com>
 RUN apt-get -yqq update
 RUN apt-get -yqq install apache2
 
-VOLUME [ "/var/www/html" ]
+
 WORKDIR /var/www/html
 
 ENV APACHE_RUN_USER www-data
