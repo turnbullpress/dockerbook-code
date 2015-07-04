@@ -5,7 +5,7 @@ ENV REFRESHED_AT 2014-06-01
 RUN apt-get update -qq && apt-get install -qqy curl apt-transport-https
 RUN curl https://get.docker.com/gpg | apt-key add -
 RUN echo deb http://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list
-RUN apt-get update -qq && apt-get install -qqy iptables ca-certificates lxc openjdk-6-jdk git-core lxc-docker
+RUN apt-get update -qq && apt-get install -qqy iptables ca-certificates lxc openjdk-7-jdk git-core lxc-docker
 
 ENV JENKINS_HOME /opt/jenkins/data
 ENV JENKINS_MIRROR http://mirrors.jenkins-ci.org
