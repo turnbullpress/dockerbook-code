@@ -36,5 +36,5 @@ do
 done
 popd
 
-docker -d &
+docker daemon &
 exec java -jar /opt/jenkins/jenkins.war

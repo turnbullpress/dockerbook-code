@@ -12,7 +12,7 @@ ADD consul.json /config/
 ADD https://dl.bintray.com/mitchellh/consul/0.3.1_web_ui.zip /tmp/webui.zip
 RUN cd /tmp/ && unzip webui.zip && mv dist/ /webui/
 
-EXPOSE 8300 8301 8301/udp 8302 8302/udp 8400 8500 53/udp
+EXPOSE 53/udp 8300 8301 8301/udp 8302 8302/udp 8400 8500
 
 VOLUME ["/data"]
 
