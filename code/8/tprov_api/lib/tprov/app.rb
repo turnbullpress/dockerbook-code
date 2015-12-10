@@ -21,8 +21,15 @@ module TProv
     set :views, File.join(File.dirname(__FILE__), 'views')
     set :bind, '0.0.0.0'
 
+    ENV['DOCKER_CERT_PATH'] ||= '/certs'
+    cert_path = File.expand_path(ENV['DOCKER_CERT_PATH'])
+
     Docker.url = ENV['DOCKER_URL'] || 'https://localhost:2375'
     Docker.options = {
+      :client_cert => File.join(cert_path, 'cert.pem'),
+      :client_key => File.join(cert_path, 'key.pem'),
+      :ssl_ca_file => File.join(cert_path, 'ca.pem'),
+      :scheme => 'https',
       :ssl_verify_peer => false
     }
 
