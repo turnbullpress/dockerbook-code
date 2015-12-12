@@ -21,10 +21,10 @@ module TProv
     set :views, File.join(File.dirname(__FILE__), 'views')
     set :bind, '0.0.0.0'
 
-    Docker.url = ENV['DOCKER_URL'] || 'https://localhost:2375'
+    Docker.url = ENV['DOCKER_URL'] || 'unix:///var/run/docker.sock'
     Docker.options = {
       :ssl_verify_peer => false
-    }
+    } unless Docker.url == 'unix:///var/run/docker.sock'
 
     enable :sessions, :logging, :dump_errors, :raise_errors, :show_exceptions
 
@@ -72,8 +72,8 @@ module TProv
       end
 
       def create_instance(name)
-        container = Docker::Container.create('Image' => 'jamtur01/tomcat7')
-        container.start('PublishAllPorts' => true, 'VolumesFrom' => name)
+        container = Docker::Container.create('Image' => 'jamtur01/tomcat7', 'PublishAllPorts' => true, 'VolumesFrom' => [name])
+        container.start
         container.id
       end
 
