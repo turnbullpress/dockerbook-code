@@ -10,6 +10,8 @@ RUN mkdir -p /var/log/nodeapp
 ADD nodeapp /opt/nodeapp/
 
 WORKDIR /opt/nodeapp
+RUN npm install -g npm
+RUN npm install -g node-gyp
 RUN npm install
 
 VOLUME [ "/var/log/nodeapp" ]
