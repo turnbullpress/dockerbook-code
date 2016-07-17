@@ -1,5 +1,5 @@
 # Jekyll Base Image
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER James Turnbull <james@example.com>
 
 RUN apt-get -yqq update

@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER James Turnbull <james@example.com>
 ENV REFRESHED_AT 2014-06-01
 
@@ -10,8 +10,6 @@ RUN mkdir -p /var/log/nodeapp
 ADD nodeapp /opt/nodeapp/
 
 WORKDIR /opt/nodeapp
-RUN npm install -g npm
-RUN npm install -g node-gyp
 RUN npm install
 
 VOLUME [ "/var/log/nodeapp" ]
