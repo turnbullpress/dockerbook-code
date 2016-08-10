@@ -3,14 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "version"
 
 Gem::Specification.new do |s|
-  s.name        = "tprov"
-  s.version     = TProv::VERSION
+  s.name        = "tprov-api"
+  s.version     = TProvAPI::VERSION
   s.authors     = ["James Turnbull"]
   s.email       = ["james@lovedthanlost.net"]
   s.homepage    = "http://www.dockerbook.com"
-  s.summary     = %q{A simple app to provision Tomcat apps with Docker}
+  s.summary     = %q{A simple app to provision Tomcat apps with Docker via the Docker API}
   s.description = %q{A simple app to provision Tomcat apps with Docker written for The Docker Book - http://www.dockerbook.com}
-  s.license     = "MIT"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -25,4 +24,5 @@ Gem::Specification.new do |s|
   s.add_dependency "sinatra-static-assets"
   s.add_dependency "emk-sinatra-url-for"
   s.add_dependency "sinatra-redirect-with-flash"
+  s.add_dependency "docker-api"
 end

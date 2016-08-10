@@ -1,0 +1,16 @@
+structs
+ssh-credentials
+credentials
+junit
+script-security
+mailer
+workflow-scm-step
+workflow-step-api
+git
+matrix-project
+ssh-slaves
+chucknorris
+greenballs
+ws-cleanup
+git-client
+durable-task

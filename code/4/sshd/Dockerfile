@@ -1,6 +1,6 @@
-# VERSION  0.0.1
-FROM ubuntu:12.04
+FROM ubuntu:16.04
 MAINTAINER James Turnbull "james@example.com"
+ENV REFRESHED_AT 2016-06-01
 RUN apt-get update
 RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd

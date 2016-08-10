@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER James Turnbull "james@example.com"
+ENV REFRESHED_AT 2013-07-28
 RUN apt-get update
 RUN apt-get install -y apache2
 ENV APACHE_RUN_USER www-data

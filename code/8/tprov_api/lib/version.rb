@@ -1,3 +1,3 @@
-module TProv
-  VERSION = "0.0.5"
+module TProvAPI
+  VERSION = "0.0.6"
 end

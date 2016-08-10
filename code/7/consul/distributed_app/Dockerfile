@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER James Turnbull "james@example.com"
-ENV REFRESHED_AT 2014-06-01
+ENV REFRESHED_AT 2016-06-01
 
 RUN apt-get -qqy update
 RUN apt-get -qqy install ruby-dev git libcurl4-openssl-dev curl build-essential python
