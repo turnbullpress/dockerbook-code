@@ -6,6 +6,7 @@ script-security
 mailer
 workflow-scm-step
 workflow-step-api
+scm-api
 git
 matrix-project
 ssh-slaves
