@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 MAINTAINER James Turnbull "james@example.com"
 ENV REFRESHED_AT 2016-06-01
 
-RUN apt-get -qqy update
-RUN apt-get -qqy install ruby ruby-dev build-essential
+RUN apt-get -qq update
+RUN apt-get -qq install ruby ruby-dev build-essential
 RUN gem install --no-ri --no-rdoc json
 
 RUN mkdir -p /opt/distributed_client

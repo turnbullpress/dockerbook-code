@@ -2,8 +2,8 @@ FROM ubuntu:14.04
 MAINTAINER James Turnbull <james@example.com>
 ENV REFRESHED_AT 2014-08-01
 
-RUN apt-get -qqy update
-RUN apt-get -qqy install curl unzip
+RUN apt-get -qq update
+RUN apt-get -qq install curl unzip
 
 ADD https://releases.hashicorp.com/consul/0.3.1/consul_0.3.1_linux_amd64.zip /tmp/consul.zip
 RUN cd /usr/sbin && unzip /tmp/consul.zip && chmod +x /usr/sbin/consul && rm /tmp/consul.zip

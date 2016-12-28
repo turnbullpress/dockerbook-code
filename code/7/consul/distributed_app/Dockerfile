@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 MAINTAINER James Turnbull "james@example.com"
 ENV REFRESHED_AT 2016-06-01
 
-RUN apt-get -qqy update
-RUN apt-get -qqy install ruby-dev git libcurl4-openssl-dev curl build-essential python
+RUN apt-get -qq update
+RUN apt-get -qq install ruby-dev git libcurl4-openssl-dev curl build-essential python
 RUN gem install --no-ri --no-rdoc uwsgi sinatra
 
 RUN mkdir -p /opt/distributed_app

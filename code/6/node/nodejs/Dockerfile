@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 MAINTAINER James Turnbull <james@example.com>
 ENV REFRESHED_AT 2016-06-01
 
-RUN apt-get -yqq update
-RUN apt-get -yqq install nodejs npm
+RUN apt-get -qq update
+RUN apt-get -qq install nodejs npm
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN mkdir -p /var/log/nodeapp
 

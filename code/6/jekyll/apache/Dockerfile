@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER James Turnbull <james@example.com>
 
-RUN apt-get -yqq update
-RUN apt-get -yqq install apache2
+RUN apt-get -qq update
+RUN apt-get -qq install apache2
 
 VOLUME [ "/var/www/html" ]
 WORKDIR /var/www/html

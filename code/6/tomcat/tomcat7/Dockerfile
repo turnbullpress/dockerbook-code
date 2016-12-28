@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 MAINTAINER James Turnbull <james@example.com>
 ENV REFRESHED_AT 2016-06-01
 
-RUN apt-get -yqq update
-RUN apt-get -yqq install tomcat7 default-jdk
+RUN apt-get -qq update
+RUN apt-get -qq install tomcat7 default-jdk
 
 ENV CATALINA_HOME /usr/share/tomcat7
 ENV CATALINA_BASE /var/lib/tomcat7
