@@ -1,11 +1,11 @@
-web:
-  image: jamtur01/composeapp
-  command: python app.py
-  ports:
-   - "5000:5000"
-  volumes:
-   - .:/composeapp
-  links:
-   - redis
-redis:
-  image: redis
+version: '3'
+services:
+  web:
+    image: jamtur01/composeapp
+    command: python app.py
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/composeapp
+  redis:
+    image: redis
