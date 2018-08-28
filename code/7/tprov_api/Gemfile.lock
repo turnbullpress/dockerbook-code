@@ -8,11 +8,11 @@ GEM
       sinatra (>= 0.9.1.1)
     excon (0.62.0)
     multi_json (1.13.1)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
-    redis (4.0.1)
+    redis (4.0.2)
     sinatra (2.0.3)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -39,4 +39,4 @@ DEPENDENCIES
   sinatra-static-assets
 
 BUNDLED WITH
-   1.16.1
+   1.16.4
