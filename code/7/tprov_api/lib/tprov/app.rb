@@ -72,7 +72,7 @@ module TProv
       end
 
       def create_instance(name)
-        container = Docker::Container.create('Image' => 'jamtur01/tomcat7')
+        container = Docker::Container.create('Image' => 'jamtur01/tomcat8')
         container.start('PublishAllPorts' => true, 'VolumesFrom' => name)
         container.id
       end

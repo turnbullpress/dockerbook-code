@@ -65,7 +65,7 @@ module TProv
       end
 
       def create_instance(name)
-        cid = `docker run -P --volumes-from "#{name}" -d -t jamtur01/tomcat7 2>&1`.chop
+        cid = `docker run -P --volumes-from "#{name}" -d -t jamtur01/tomcat8 2>&1`.chop
         [$?.exitstatus == 0, cid]
       end
 
