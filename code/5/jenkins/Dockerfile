@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins/jenkins:lts
 MAINTAINER james@example.com
 ENV REFRESHED_AT 2016-06-01
 

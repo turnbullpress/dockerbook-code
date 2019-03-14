@@ -4,7 +4,7 @@ GEM
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
     mustermann (1.0.2)
-    rack (2.0.6)
+    rack (2.0.5)
     rack-protection (2.0.3)
       rack
     redis (4.0.1)
@@ -33,4 +33,4 @@ DEPENDENCIES
   sinatra-static-assets
 
 BUNDLED WITH
-   1.17.3
+   1.16.1
