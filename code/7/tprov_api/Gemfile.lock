@@ -6,17 +6,17 @@ GEM
       multi_json
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
-    excon (0.62.0)
+    excon (0.64.0)
     multi_json (1.13.1)
-    mustermann (1.0.2)
-    rack (2.0.5)
-    rack-protection (2.0.3)
+    mustermann (1.0.3)
+    rack (2.0.7)
+    rack-protection (2.0.5)
       rack
-    redis (4.0.1)
-    sinatra (2.0.3)
+    redis (4.1.1)
+    sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.3)
+      rack-protection (= 2.0.5)
       tilt (~> 2.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
@@ -24,7 +24,7 @@ GEM
       sinatra (>= 1.0.0)
     sinatra-static-assets (1.0.4)
       sinatra (>= 1.1.0)
-    tilt (2.0.8)
+    tilt (2.0.9)
 
 PLATFORMS
   ruby
@@ -39,4 +39,4 @@ DEPENDENCIES
   sinatra-static-assets
 
 BUNDLED WITH
-   1.16.1
+   1.17.2
