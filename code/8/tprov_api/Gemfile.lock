@@ -9,7 +9,7 @@ GEM
     excon (0.62.0)
     multi_json (1.13.1)
     mustermann (1.0.2)
-    rack (2.0.5)
+    rack (2.0.7)
     rack-protection (2.0.3)
       rack
     redis (4.0.1)
