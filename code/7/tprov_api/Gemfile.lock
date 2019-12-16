@@ -6,7 +6,7 @@ GEM
       multi_json
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
-    excon (0.64.0)
+    excon (0.71.0)
     multi_json (1.13.1)
     mustermann (1.0.3)
     rack (2.0.7)
