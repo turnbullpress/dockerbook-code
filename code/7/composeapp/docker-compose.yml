@@ -6,6 +6,6 @@ services:
     ports:
      - "5000:5000"
     volumes:
-     - .:/composeapp
+     - .:/composeapp:ro
   redis:
     image: redis
