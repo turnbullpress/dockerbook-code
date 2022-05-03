@@ -3,15 +3,17 @@ GEM
   specs:
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
-    mustermann (1.0.3)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     rack (2.2.3)
-    rack-protection (2.0.5)
+    rack-protection (2.2.0)
       rack
     redis (4.1.1)
-    sinatra (2.0.5)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
@@ -19,7 +21,7 @@ GEM
       sinatra (>= 1.0.0)
     sinatra-static-assets (1.0.4)
       sinatra (>= 1.1.0)
-    tilt (2.0.9)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
