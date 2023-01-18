@@ -4,7 +4,7 @@ GEM
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
     mustermann (1.0.3)
-    rack (2.2.3)
+    rack (2.2.6.2)
     rack-protection (2.0.5)
       rack
     redis (4.1.1)
